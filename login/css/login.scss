@@ -1,0 +1,67 @@
+$font: Helvetica,sans-serif;
+$primary-color: rgb(86, 174, 171);
+
+%mes{
+    border: 1px solid #ccc;
+    padding: 16px;
+    color: aliceblue;
+    justify-content: center;
+}
+
+h2{
+    color: #f1f1f1;
+    font-size: 32px;
+}
+
+img{
+    width: 300px;
+}
+
+
+body{
+    font:100% $font;
+    background-color: $primary-color;
+    text-align: center;
+}
+.best{
+    @extend %mes;
+}
+
+%field{
+    width: 50%;
+    padding: 15px;
+    margin: 5px ;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+ 
+  input[type=text], input[type=password] {
+    @extend %field;
+  }
+
+  %bttn{
+    background-color:rgb(40, 9, 151);
+     color: rgb(255, 254, 254);
+     padding: 20px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 20%;
+     opacity: 0.9;
+     border-radius: 50px ;
+     font-size: 21px;
+   }
+
+   button{
+    @extend %bttn;
+  }
+
+  .one{
+    text-align: center;
+    background-size: 100%;
+    background-color: #f1f1f1;
+    padding:6px;
+    width: 100%;
+    
+}
